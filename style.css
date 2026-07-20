@@ -1,0 +1,364 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:"Inter", sans-serif ;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Nav Bar style start */
+
+nav{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+nav section{
+    display: flex;
+    justify-content:space-between;
+    gap: 75px;
+}
+.btn {
+  padding: 13px;
+  border-radius: 7px;
+  background-color: #1D4ED8;
+  color: #FFFFFF;
+  border: none;
+}
+
+/* Nav Bar style end */
+
+
+/* Banner Style start */
+
+.banner {
+    background-image: url(/assets/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+.heading_1{
+    padding:20px;
+    text-align: center;
+    color:#FFFFFF;
+    font-family: "Inter", sans-serif;
+
+
+}
+.banner p{
+    color:#FFFFFF;
+    font-size: 22px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+}
+
+/* Banner Style end */
+
+
+/* Speaker section style start */
+
+.speakers-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-container {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header-container h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+/* The Grid System */
+
+.speakers-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+/* Card Styling */
+.speaker-card {
+  background: #ffffff;
+  border: 1px solid #f0f0f0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.speaker-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+
+.image-wrapper {
+  width: 100%;
+  height: 280px; 
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-content {
+  padding: 24px;
+}
+
+/* Typography Inside Cards */
+.category {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+  color: #0055ff;
+}
+
+.speaker-card h3 {
+  font-size: 1.25rem;
+  margin: 0 0 6px 0;
+  color: #111111;
+}
+
+.speaker-card p {
+  font-size: 0.9rem;
+  color: #666666;
+  margin: 0;
+}
+
+/* Speaker section style end */
+
+/* Pricing card Area Start */
+
+/* --- Header Section --- */
+.pricing-header {
+    text-align: center;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.pricing-header h1 {
+    font-size: 2.5rem;
+    color: #0f172a;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.pricing-header p {
+    font-size: 1rem;
+    color: #64748b;
+}
+
+/* --- Pricing Container --- */
+.pricing-container {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 24px;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* --- Card Styles (Standard & Team) --- */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 40px 32px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.card.team-card {
+    background-color: #f8fafc;
+}
+
+
+/* --- Card Content --- */
+.plan-name {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    color: #64748b;
+    margin-bottom: 16px;
+}
+
+.price {
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: #0f172a;
+    line-height: 1.1;
+}
+
+.period {
+    font-size: 0.875rem;
+    color: #64748b;
+    margin-top: 4px;
+    margin-bottom: 24px;
+}
+
+.divider {
+    height: 1px;
+    background-color: #f1f5f9;
+    margin-bottom: 28px;
+}
+
+/* --- Features List --- */
+.features-list {
+    list-style: none;
+    margin-bottom: 40px;
+    flex-grow: 1;
+}
+
+.features-list li {
+    font-size: 0.925rem;
+    color: #334155;
+    margin-bottom: 14px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.features-list li::before {
+    content: "•";
+    color: #2563eb; 
+    font-weight: bold;
+    font-size: 1.25rem;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+/* --- Button Styles --- */
+.btn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border: 1px solid #2563eb;
+    color: #2563eb;
+    background-color: transparent;
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #eff6ff;
+}
+
+.btn-dark {
+    border-color: #1e293b;
+    color: #1e293b;
+}
+
+.btn-dark:hover {
+    background-color: #f1f5f9;
+}
+
+/* --- Dark Variant (PRO Card) --- */
+.card.featured {
+    background-color: #0b1329;
+    border-color: #0b1329;
+    color: #ffffff;
+}
+
+.card.featured .plan-name {
+    color: #3b82f6;
+}
+
+.card.featured .price {
+    color: #ffffff;
+}
+
+.card.featured .period {
+    color: #94a3b8;
+}
+
+.card.featured .divider {
+    background-color: #1e293b;
+}
+
+.card.featured .features-list li {
+    color: #cbd5e1;
+}
+
+.card.featured .btn {
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+}
+
+.card.featured .btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* Pricing card Area End */
+
+
+ /* Fotter Section Start */
+
+.footer{
+    background:#0f1c2e;
+    padding:35px 80px;
+    margin-top: 20px;
+}
+
+.footer-container{
+    max-width:1200px;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.copyright{
+    color:#8c97a6;
+    font-size:14px;
+}
+
+.footer-links{
+    display:flex;
+    gap:30px;
+}
+
+.footer-links a{
+    color:#8c97a6;
+    text-decoration:none;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.footer-links a:hover{
+    color:#ffffff;
+} 
+
+/* Fotter Section End */
+
